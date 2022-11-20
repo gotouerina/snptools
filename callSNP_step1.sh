@@ -1,3 +1,4 @@
+##给参考基因组建立索引
 ref=ca.fa
 Prefix=ca
 cat $ref | grep ">" | sed 's/>//g' > genomeChrList.txt
