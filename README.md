@@ -15,4 +15,10 @@ To install samtools , type
 
     conda install samtools
 
+#   PCA
+
+To install plink, type 
+
+        conda install -c bioconda plink
+
 
