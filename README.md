@@ -1,12 +1,12 @@
 # SNP_call
 
-software: bwa , samtools , gatk
+Software: bwa , samtools , gatk
 
-bwa   https://github.com/lh3/bwa
+Bwa   https://github.com/lh3/bwa
 
-samtools https://github.com/lh3/bwa
+Samtools https://github.com/lh3/bwa
 
-gatk https://github.com/broadinstitute/gatk
+Gatk https://github.com/broadinstitute/gatk
 
 To install bwa , type
 
@@ -31,7 +31,7 @@ To install VCF2dis , type
         make
         ./bin/VCF2Dis
  
- and then put the mat file in website :  (http://emboss.toulouse.inra.fr/cgi-bin/emboss/fneighbor?_pref_hide_optional=1)  to construct the tree
+ and then put the mat file into website :  (http://emboss.toulouse.inra.fr/cgi-bin/emboss/fneighbor?_pref_hide_optional=1)  to construct the tree
 
 to operate the tree, Newick Utilities is recommaded.
 
