@@ -2,8 +2,14 @@
 
 software: bwa , samtools , gatk
 
-conda install bwa
+bwa   https://github.com/lh3/bwa
 
-conda install samtools
+samtools https://github.com/lh3/bwa
+
+gatk https://github.com/broadinstitute/gatk
+
+  conda install bwa
+
+  conda install samtools
 
 
