@@ -1,9 +1,10 @@
+## Usage : perl vcf_extract_site.pl site.bed input.vcf.gz
 use strict;
 use warnings;
 my $input = shift;
 my $gvcf = shift;
-open I ,"<$input" ,or die "no input";
-open E , "zcat $gvcf | ", or die "no input2";
+open I ,"<$input" ,or die "no input site file";
+open E , "zcat $gvcf | ", or die "no input vcf file";
 
 my %data;
 while (<I>) 
