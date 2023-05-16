@@ -33,5 +33,19 @@ To install VCF2dis , type
  
  and then put the mat file in website :  (http://emboss.toulouse.inra.fr/cgi-bin/emboss/fneighbor?_pref_hide_optional=1)  to construct the tree
 
+to operate the tree, Newick Utilities is recommaded.
+
+To download  Newick Utilities
+
+        conda install newick_utils
+
+or from https://github.com/tjunier/newick_utils
+
+
  #  Structure
+ 
+ Download the admixture by typing
+ 
+        wget https://github.com/stevemussmann/admixturePipeline/archive/master.zip
+        unzip master.zip
  
