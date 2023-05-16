@@ -1,4 +1,5 @@
 ## Usage : perl vcf_extract_site.pl site.bed input.vcf.gz
+## vcftools is more fast!!
 use strict;
 use warnings;
 my $input = shift;
