@@ -8,8 +8,11 @@ samtools https://github.com/lh3/bwa
 
 gatk https://github.com/broadinstitute/gatk
 
-    conda install bwa
+To install bwa , type
 
-     conda install samtools
+    conda install bwa
+To install samtools , type
+
+    conda install samtools
 
 
