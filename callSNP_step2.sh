@@ -7,7 +7,7 @@ samplename=$3
 ##过滤测序数据
 fastp -l 45 -q 20 -w 15 -i $fq1 -I $fq2 -o ${samplename}_clean_1.fq.gz -O ${samplename}_clean_2.fq.gz
 ##比对
-bwa mem -t 30 -R "@RG\tID:${samplename}\tPL:illumina\tLB:${samplename}\tSM:${samplename}" $ref ${samplename}_clean_1.fq.gz ${samplename}_clean_2.fq.gz
+bwa mem -t 30 -R "@RG\tID:${samplename}\tPL:illumina\tLB:${samplename}\tSM:${samplename}" $ref ${samplename}_clean_1.fq.gz ${samplename}_clean_2.fq.gz > ${samplename}.sam
 ##sam2bam
 samtools view -b -S ${samplename}.sam > ${samplename}.bam
 samtools sort ${samplename}.bam  -@ 2 -m 10G -o ${samplename}.sort.bam
