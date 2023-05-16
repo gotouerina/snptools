@@ -15,10 +15,23 @@ To install samtools , type
 
     conda install samtools
 
-#   PCA
+#   PCA （主成分分析）
 
 To install plink, type 
 
-        conda install -c bioconda plink
+    conda install -c bioconda plink
 
+#   Tree (进化树)
 
+To install VCF2dis , type
+
+        wget https://github.com/hewm2008/VCF2Dis/archive/v1.47.tar.gz
+        tar -zxvf  VCF2DisXXX.tar.gz
+        cd VCF2DisXXX;
+        make
+        ./bin/VCF2Dis
+ 
+ and then put the mat file in website :  (http://emboss.toulouse.inra.fr/cgi-bin/emboss/fneighbor?_pref_hide_optional=1)  to construct the tree
+
+ #  Structure
+ 
