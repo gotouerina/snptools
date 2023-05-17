@@ -15,6 +15,10 @@ To install samtools , type
 
     conda install samtools
 
+Instead of combineGVCF, you can use GenomicDBI for large number of samples.
+
+Outgroup must be combined independently , or you will filter a lot of sites and the PCA will fail.
+
 #   PCA （主成分分析）
 
 To install plink, type 
