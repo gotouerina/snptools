@@ -48,4 +48,19 @@ or from https://github.com/tjunier/newick_utils
  
         wget https://github.com/stevemussmann/admixturePipeline/archive/master.zip
         unzip master.zip
+
+for more information ,read https://github.com/NovembreLab/admixture
+
+# RFmix
+
+RFmix : https://github.com/slowkoni/rfmix
+
+To install , type
+
+        git clone https://github.com/slowkoni/rfmix.git;
+        cd rfmix;
+        autoreconf --force --install 
+        ./configure           
+        make
  
+ and example files are in folder
