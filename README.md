@@ -87,5 +87,16 @@ To install , type
         Dsuite Dtrios sample.snp.vcf.gz sets.txt -t species.newick -o sample
         Dsuite Fbranch species.newick sample_tree.txt >fbranch.out
         Dsuite/utils/dtools.py fbranch.out species.newick --outgroup Outgroup --use_distances --dpi 1200 --tree-label-size 3
+ 
+ # SMC++
+        
+ SMC++:https://github.com/popgenmethods/smcpp
+ 
+ The follow download is recommanded : 
+        
+        wget https://github.com/popgenmethods/smcpp/releases/download/v1.15.2/smcpp-1.15.2-Linux-x86_64.sh
+        sh smcpp-1.15.2-Linux-x86_64.sh
+ 
+        
         
         
