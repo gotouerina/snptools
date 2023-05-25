@@ -74,3 +74,18 @@ To install , type
  Dsuite : https://github.com/millanek/Dsuite
  
  Chromosome is recommand to split for Dsuiate and merge all by "DtriosCombine" command
+ To install , follow
+ 
+        git clone https://github.com/millanek/Dsuite.git
+        cd Dsuite
+        make
+        cd utils
+        python3 setup.py install --user --prefix=
+        
+ And you can read https://yanzhongsino.github.io/2022/04/10/bioinfo_geneflow_Dsuite/ for more detail. Here I only supply some useful command. You can read example sets.txt in the folder.
+ 
+        Dsuite Dtrios sample.snp.vcf.gz sets.txt -t species.newick -o sample
+        Dsuite Fbranch species.newick sample_tree.txt >fbranch.out
+        Dsuite/utils/dtools.py fbranch.out species.newick --outgroup Outgroup --use_distances --dpi 1200 --tree-label-size 3
+        
+        
