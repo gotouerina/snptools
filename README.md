@@ -68,3 +68,9 @@ To install , type
         make
  
  and example files are in folder
+ 
+ # Dsuite
+ 
+ Dsuite : https://github.com/millanek/Dsuite
+ 
+ Chromosome is recommand to split for Dsuiate and merge all by "DtriosCombine" command
