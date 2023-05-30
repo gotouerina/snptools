@@ -97,7 +97,8 @@ To install , type
         wget https://github.com/popgenmethods/smcpp/releases/download/v1.15.2/smcpp-1.15.2-Linux-x86_64.sh
         sh smcpp-1.15.2-Linux-x86_64.sh
   
-  #FastEPRR(重组率)
+
+# FastEPRR(重组率)
         
         Download from : https://www.picb.ac.cn/evolgen/softwares/
         R CMD INSTALL FastEPRR_2.0.tar.gz
