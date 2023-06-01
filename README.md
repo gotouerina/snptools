@@ -2,6 +2,8 @@
 
 Update on 2023.6.1 v1.0
 
+#   Software Install (软件安装)
+
 Software: bwa , samtools , gatk
 
 Bwa   https://github.com/lh3/bwa
@@ -13,6 +15,7 @@ Gatk https://github.com/broadinstitute/gatk
 To install bwa , type
 
     conda install bwa
+
 To install samtools , type
 
     conda install samtools
