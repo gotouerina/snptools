@@ -1,4 +1,6 @@
-# SNP_call
+# SNPpipeline 分析流程
+
+Update on 2023.6.1 v1.0
 
 Software: bwa , samtools , gatk
 
