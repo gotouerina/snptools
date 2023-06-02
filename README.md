@@ -147,5 +147,14 @@ Using beagle phased vcf.
 Make sure in step2.sh, The chromsome name is like 01 02 03, but not chr1 chr2 chr3, or it will run wrong.
 
 # LDBlockShow （连锁不平衡）
+
+# Pixy (分化参数计算)
+
+You can use this software calculte fst dxy pi one time !
+
+        conda install pixy -c conda-forge
+        pixy --stats pi fst dxy   --vcf $vcf --window_size 10000 --n_cores 8  --populations poplist
+
+# VCFtools (分化参数计算)
         
 
