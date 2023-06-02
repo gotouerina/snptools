@@ -1,6 +1,7 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.1 v1.0
+Update on 2023.6.2 v1.1
+2023.6.2 add fasteprr pipeline
 
 #   Software Install (软件安装)
 
@@ -23,6 +24,8 @@ To install samtools , type
 Instead of combineGVCF, you can use GenomicDBI for large number of samples.
 
 Outgroup must be combined independently , or you will filter a lot of sites and the PCA will fail.
+
+Beagle : To phase vcf. Website : http://faculty.washington.edu/browning/beagle/beagle.html
 
 #   PCA （主成分分析）
 
@@ -62,6 +65,7 @@ for more information ,read https://github.com/NovembreLab/admixture
 
 # RFmix
 
+Using beagle phased vcf. 
 RFmix : https://github.com/slowkoni/rfmix
 
 To install , type
@@ -104,9 +108,10 @@ To install , type
   
 
 # FastEPRR(重组率)
+Using beagle phased vcf.    
         
         Download from : https://www.picb.ac.cn/evolgen/softwares/
         R CMD INSTALL FastEPRR_2.0.tar.gz
         
-        
+Make sure in step2.sh, The chromsome name is like 01 02 03, but not chr1 chr2 chr3, or it will run wrong.    
         
