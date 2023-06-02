@@ -98,9 +98,10 @@ To install , type
         Dsuite Fbranch species.newick sample_tree.txt >fbranch.out
         Dsuite/utils/dtools.py fbranch.out species.newick --outgroup Outgroup --use_distances --dpi 1200 --tree-label-size 3
  
-  #  Treemix(基因流)
+  #  Treemix (基因流)
  
  Ref : https://yanzhongsino.github.io/2022/03/20/bioinfo_geneflow_TreeMix/
+ 
  Install, type :
          
          conda install -c bioconda treemix
