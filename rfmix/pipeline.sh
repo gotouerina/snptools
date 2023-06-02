@@ -10,7 +10,7 @@ zless $vcf |grep 'REF' > species.list
 #extract chr
 vcftools --gzvcf $vcf  --chr LG01 --recode --recode-INFO-all --stdout > $chr.vcf
 
-#generate map file
+#generate map file 0.000554779412是遗传距离，不同物种不一样，要查文献
 perl -F'\t' -alne '$,="\t";$i=$F[1]* 0.000554779412;  print $F[0],$F[2],$i,$F[1] unless /#/' $chr.vcf > $chr.genetic.map
 cat $chr.genetic.map | awk '{print $1,$4,$3}' > $chr.genetic.map.rfmix
 
