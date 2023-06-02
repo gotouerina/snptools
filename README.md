@@ -1,6 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.2 v1.1
+Update on 2023.6.2 v1.2
 
 2023.6.2 add fasteprr pipeline
 
@@ -138,12 +138,14 @@ Warning : It need python2 environment.
         sh smcpp-1.15.2-Linux-x86_64.sh
   
 
-# FastEPRR(重组率)
+# FastEPRR (重组率)
 Using beagle phased vcf.    
         
         Download from : https://www.picb.ac.cn/evolgen/softwares/
         R CMD INSTALL FastEPRR_2.0.tar.gz
         
-Make sure in step2.sh, The chromsome name is like 01 02 03, but not chr1 chr2 chr3, or it will run wrong.    
+Make sure in step2.sh, The chromsome name is like 01 02 03, but not chr1 chr2 chr3, or it will run wrong.
+
+# LDBlockShow （连锁不平衡）
         
 
