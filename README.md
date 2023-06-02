@@ -55,7 +55,7 @@ To download  Newick Utilities
 or from https://github.com/tjunier/newick_utils
 
 
- #  Structure
+ #  Structure（群体结构）
  
  Download the admixture by typing
  
@@ -64,7 +64,7 @@ or from https://github.com/tjunier/newick_utils
 
 for more information ,read https://github.com/NovembreLab/admixture
 
-# RFmix
+# RFmix（基因流）
 
 Using beagle phased vcf. 
 RFmix : https://github.com/slowkoni/rfmix
@@ -79,7 +79,7 @@ To install , type
  
  and example files are in folder
  
- # Dsuite
+ # Dsuite（基因流）
  
  Dsuite : https://github.com/millanek/Dsuite
  
@@ -98,7 +98,7 @@ To install , type
         Dsuite Fbranch species.newick sample_tree.txt >fbranch.out
         Dsuite/utils/dtools.py fbranch.out species.newick --outgroup Outgroup --use_distances --dpi 1200 --tree-label-size 3
  
- # SMC++
+ # SMC++（群体历史）
         
  SMC++:https://github.com/popgenmethods/smcpp
  
