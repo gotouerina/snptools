@@ -98,6 +98,35 @@ To install , type
         Dsuite Fbranch species.newick sample_tree.txt >fbranch.out
         Dsuite/utils/dtools.py fbranch.out species.newick --outgroup Outgroup --use_distances --dpi 1200 --tree-label-size 3
  
+  #  Treemix(基因流)
+ 
+ Ref : https://yanzhongsino.github.io/2022/03/20/bioinfo_geneflow_TreeMix/
+ Install, type :
+         
+         conda install -c bioconda treemix
+         conda install vcftools
+         conda install bcftools
+         conda install plink
+ 
+ Or download source code from Official Website(recommand) : https://bitbucket.org/nygcresearch/treemix/downloads/
+ 
+        wget https://bitbucket.org/nygcresearch/treemix/downloads/treemix-1.13.tar.gz
+        tar -xvf treemix-1.0.tar.gz
+        cd treemix-1.0
+        ./configure
+        make
+        make install
+If you do not have root permission, try 
+
+        ./configure --prefix=`pwd`
+        
+The script plink2treemix.py you can download by typing ,
+
+        wget https://bitbucket.org/nygcresearch/treemix/downloads/plink2treemix.py
+
+Warning : It need python2 environment. 
+       
+         
  # SMC++（群体历史）
         
  SMC++:https://github.com/popgenmethods/smcpp
@@ -116,3 +145,4 @@ Using beagle phased vcf.
         
 Make sure in step2.sh, The chromsome name is like 01 02 03, but not chr1 chr2 chr3, or it will run wrong.    
         
+
