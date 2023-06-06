@@ -3,6 +3,7 @@
 Update on 2023.6.2 v1.2
 
 2023.6.2 add fasteprr pipeline
+
 2023.6.6 add vcftools and LDBlockShow README
 
 #   Software Install (软件安装)
