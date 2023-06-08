@@ -25,3 +25,8 @@ vcftools --gzvcf  $chr.input.beagle.vcf.gz   --keep  tag.txt  --recode --recode-
 
 ##rfmix this step should modify the ref.txt file by group
 /data/01/user214/fsc/rfmix/rfmix  -f $chr.TAG.recode.vcf.recode.vcf  -r  $chr.REF.recode.vcf.recode.vcf  -g $chr.genetic.map -m ref.txt -o Ma  --chromosome=$chr
+
+##analysis assigned species
+perl rfmix.pl LG01.fb.tsv $species LG01.out
+
+##R plot 画图
