@@ -131,7 +131,10 @@ The script plink2treemix.py you can download by typing ,
 
 Warning : It need python2 environment. 
        
-         
+ #  gIMble(基因流)
+    
+    The author is still updating it.
+ 
  # SMC++（群体历史）
         
  SMC++:https://github.com/popgenmethods/smcpp
@@ -167,6 +170,7 @@ You can use this software calculte fst dxy pi one time !
 
 # VCFtools (分化参数计算)
       
-        vcftools --vcf $vcf --TajimaD 20000 --out $name.D ##TajimaD  
+        vcftools --vcf $vcf --TajimaD 20000 --out $name.D ##TajimaD
+        
         
 
