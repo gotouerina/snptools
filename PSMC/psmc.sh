@@ -10,18 +10,10 @@ ref=E
 minicondaPATH=
 psmcPATH=
 
-####为参考组建立索引###
-bwa index IndexRef/$ref.fna
-###fastp过滤###
-fastp -l 45 -q 20 -w 15 -i IndexRef/$ref.1.fq.gz -I IndexRef/$ref.2.fq.gz -o IndexRef/$ref.1.out.fq.gz -O IndexRef/$ref.2.out.fq.gz
-###比对###
-bwa mem -t 30 -R '@RG\tID:$ref\tPL:illumina\tLB:$ref\tSM:$ref' IndexRef/$ref.fna  IndexRef/$ref.1.out.fq.gz  IndexRef/$ref.2.out.fq.gz | samtools view -Sb - > IndexRef/$ref.bam
-###排序###
-samtools sort -@ 4 -m 4G -O bam -o IndexRef/$ref.sort.bam IndexRef/$ref.bam
 ###标记重复序列###
-gatk MarkDuplicates -I IndexRef/$ref.sort.bam -O IndexRef/$ref.sort.markdup.bam -M IndexRef/$ref.sort.markdup_metrics.txt
+#gatk MarkDuplicates -I IndexRef/$ref.sort.bam -O IndexRef/$ref.sort.markdup.bam -M IndexRef/$ref.sort.markdup_metrics.txt
 ###去除重复序列###
-samtools rmdup IndexRef/$ref.sort.markdup.bam IndexRef/$ref.sort.rmdup.bam
+#samtools rmdup IndexRef/$ref.sort.markdup.bam IndexRef/$ref.sort.rmdup.bam
 ###计算测序深度###
 samtools depth IndexRef/$ref.sort.markdup.bam -a > IndexRef/$ref.test.depth
 ###计算平均深度###
