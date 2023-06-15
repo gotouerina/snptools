@@ -144,6 +144,12 @@ Warning : It need python2 environment.
         wget https://github.com/popgenmethods/smcpp/releases/download/v1.15.2/smcpp-1.15.2-Linux-x86_64.sh
         sh smcpp-1.15.2-Linux-x86_64.sh
   
+# PSMC(群体历史)
+
+Git : https://github.com/lh3/psmc
+
+        git clone https://github.com/lh3/psmc.git
+        make; (cd utils; make)
 
 # FastEPRR (重组率)
 Using beagle phased vcf.    
