@@ -171,6 +171,8 @@ You can use this software calculte fst dxy pi one time !
 # VCFtools (分化参数计算)
       
         vcftools --vcf $vcf --TajimaD 20000 --out $name.D ##TajimaD
+
+# Gene Island
         
         
 
