@@ -150,6 +150,11 @@ Git : https://github.com/lh3/psmc
 
         git clone https://github.com/lh3/psmc.git
         make; (cd utils; make)
+        x=depth/3
+        y=depth*2
+        bcftools mpileup -C50 -u -f $ref.fasta $ref.sort.rmdup.bam  | bcftools call -c | vcfutils.pl vcf2fq -d $x -D $y | gzip > $ref.fq.gz
+        $psmcPATH/utils/fq2psmcfa -q20 $ref.fq.gz > $ref.psmcfa
+        $psmcPATH/psmc -N25 -t15 -r5 -p  “4+25*2+4+6” -o $ref.psmc $ref.psmcfa
 
 # FastEPRR (重组率)
 Using beagle phased vcf.    
