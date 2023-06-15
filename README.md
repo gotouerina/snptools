@@ -1,12 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.2 v1.2
-
-2023.6.2 add fasteprr pipeline
-
-2023.6.6 add vcftools and LDBlockShow README
-
-2023.6.8 update rfmix pipeline
+Update on 2023.6.15 v2.0
 
 #   Software Install (软件安装)
 
