@@ -6,9 +6,9 @@
 #        mkdir IndexRef
 #fi
 
-ref=Ecoli
-minicondaPATH=/data/00/user/user215/miniconda3/bin
-psmcPATH=/data/01/user215/software/psmc
+ref=E
+minicondaPATH=
+psmcPATH=
 
 ####为参考组建立索引###
 bwa index IndexRef/$ref.fna
