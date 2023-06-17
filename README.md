@@ -1,6 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.17 v2.01
+Update on 2023.6.17 v3.0
 
 #   Software Install (软件安装)
 
@@ -199,6 +199,8 @@ You can use this software calculate fst dxy pi one time !
         vcftools --vcf $vcf --TajimaD 20000 --out $name.D ##TajimaD
 
 # Gene Island
+First, seclect the top 5% Fst and 5% dxy.
+        
 
 # Analysis Lab
 
