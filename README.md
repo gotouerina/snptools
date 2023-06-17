@@ -210,6 +210,8 @@ Some scripts might be useful for analysis.
     
 ![boxplot](https://github.com/gotouerina/snptools/blob/main/analysis/image/boxplot.png)
 
+Ref: DOI: 10.1016/j.cell.2020.05.032
+
 <div align = left>
     
 ## linear (线性回归)
