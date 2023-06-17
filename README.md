@@ -205,4 +205,5 @@ You can use this software calculate fst dxy pi one time !
 Some scripts might be useful for analysis.
         
 Boxplot(箱线图)
+
 ![image](https://github.com/gotouerina/snptools/blob/main/analysis/image/ca-rus-lg02.pdf)
