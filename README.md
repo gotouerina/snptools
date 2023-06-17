@@ -167,6 +167,16 @@ Git : https://github.com/BGI-shenzhen/PopLDdecay
         make;
         mv PopLDdecay  bin/;    #     [rm *.o]
 
+If SNP file derived from GATK, run
+
+         # calculate ld
+         ./bin/PopLDdecay    -InVCF  SNP.vcf.gz  -OutStat LDdecay  
+         #plot one population
+         perl  bin/Plot_OnePop.pl  -inFile   LDdecay.stat.gz  -output  Fig 
+         #plot multi population  example of inList see fold PopLDdecay
+         perl  bin/Plot_MutiPop.pl  -inList  Pop.ResultPath.list  -output Fig
+
+
 # LDBlockShow （连锁不平衡）
 Git : https://github.com/BGI-shenzhen/LDBlockShow
         
@@ -174,15 +184,6 @@ Git : https://github.com/BGI-shenzhen/LDBlockShow
         cd LDBlockShowXXX;  cd src;
         sh  make.sh                         ## Linux :  [ make ; make clean ]
         ../bin/LDBlockShow
-
-If SNP file derived from GATK, run
-
-         # calculate ld
-         ./bin/PopLDdecay    -InVCF  SNP.vcf.gz  -OutStat LDdecay  
-         #plot one population
-         perl  bin/Plot_OnePop.pl  -inFile   LDdecay.stat.gz  -output  Fig 
-         #plot multi population
-         perl  bin/Plot_MutiPop.pl  -inList  Pop.ResultPath.list  -output Fig
 
 # Pixy (分化参数计算)
 
