@@ -187,7 +187,7 @@ Git : https://github.com/BGI-shenzhen/LDBlockShow
 
 # Pixy (分化参数计算)
 
-You can use this software calculte fst dxy pi one time !
+You can use this software calculate fst dxy pi one time !
 
         conda install pixy -c conda-forge
         pixy --stats pi fst dxy   --vcf $vcf --window_size 10000 --n_cores 8  --populations poplist
