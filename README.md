@@ -1,6 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.15 v2.0
+Update on 2023.6.17 v2.01
 
 #   Software Install (软件安装)
 
@@ -158,6 +158,15 @@ Using beagle phased vcf.
         
 Make sure in step2.sh, The chromsome name is like 01 02 03, but not chr1 chr2 chr3, or it will run wrong.
 
+# PopLDdecay (连锁不平衡)
+
+Git : https://github.com/BGI-shenzhen/PopLDdecay
+
+        git clone https://github.com/hewm2008/PopLDdecay.git 
+        cd PopLDdecay; chmod 755 configure; ./configure;
+        make;
+        mv PopLDdecay  bin/;    #     [rm *.o]
+
 # LDBlockShow （连锁不平衡）
 Git : https://github.com/BGI-shenzhen/LDBlockShow
         
@@ -165,6 +174,15 @@ Git : https://github.com/BGI-shenzhen/LDBlockShow
         cd LDBlockShowXXX;  cd src;
         sh  make.sh                         ## Linux :  [ make ; make clean ]
         ../bin/LDBlockShow
+
+If SNP file derived from GATK, run
+
+         # calculate ld
+         ./bin/PopLDdecay    -InVCF  SNP.vcf.gz  -OutStat LDdecay  
+         #plot one population
+         perl  bin/Plot_OnePop.pl  -inFile   LDdecay.stat.gz  -output  Fig 
+         #plot multi population
+         perl  bin/Plot_MutiPop.pl  -inList  Pop.ResultPath.list  -output Fig
 
 # Pixy (分化参数计算)
 
