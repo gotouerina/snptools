@@ -207,6 +207,7 @@ Some scripts might be useful for analysis.
 ## Boxplot(箱线图)
 
 <div align = center>
+    
 ![boxplot](https://github.com/gotouerina/snptools/blob/main/analysis/image/boxplot.png)
 
 <div align = left>
