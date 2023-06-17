@@ -191,6 +191,8 @@ You can use this software calculte fst dxy pi one time !
 
         conda install pixy -c conda-forge
         pixy --stats pi fst dxy   --vcf $vcf --window_size 10000 --n_cores 8  --populations poplist
+        ##过滤大于0小于1的值
+        perl -F'\s+' -alne 'print if $F[3]>=0 && $F[3]<=1' dxy.txt  > dxy.filter.txt
 
 # VCFtools (分化参数计算)
       
