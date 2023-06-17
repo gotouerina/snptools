@@ -204,6 +204,8 @@ You can use this software calculate fst dxy pi one time !
 
 Some scripts might be useful for analysis.
         
-Boxplot(箱线图)
+## Boxplot(箱线图)
 
-![boxplot]
+![boxplot](https://github.com/gotouerina/snptools/blob/main/analysis/image/boxplot.png)
+
+## linear (线性回归)
