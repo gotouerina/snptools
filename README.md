@@ -207,6 +207,7 @@ and run
         sh split.sh
 
 merge by
+
         perl merge.pl > island.vcf
         
 To count gene island number, try bash command.
