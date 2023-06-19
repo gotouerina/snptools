@@ -1,6 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.17 v3.0
+Update on 2023.6.19 v3.01
 
 #   Software Install (软件安装)
 
