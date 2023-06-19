@@ -199,13 +199,17 @@ You can use this software calculate fst dxy pi one time !
         vcftools --vcf $vcf --TajimaD 20000 --out $name.D ##TajimaD
 
 # Gene Island
-First, seclect the top 5% Fst region in $fst_region_file.
+First, seclect the top 5% Fst region in $fst_region_file using bash command.
 
         perl -F'\s+' -alne  'print "bcftools filter $vcf --regions $F[0]:$F[1]-$F[2] > $F[0]:$F[1]-$F[2].vcf" '  $fst_region_file  > split.sh
-        sh split.sh
-        perl merge.pl > island
-        #rm *.vcf && mv island island.vcf
+and run
 
+        sh split.sh
+
+merge by
+        perl merge.pl > island.vcf
+        
+To count gene island number, try bash command.
 # Analysis Lab
 
 Some scripts might be useful for analysis.
