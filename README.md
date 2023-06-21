@@ -225,7 +225,7 @@ Ref: DOI: 10.1016/j.cell.2020.05.032
 
 <div align = left>
     
-## linear (线性回归)
+## Linear (线性回归)
 
 <div align = center>
     
@@ -233,3 +233,10 @@ Ref: DOI: 10.1016/j.cell.2020.05.032
 
 <div align = left>
 
+## Distribution 分布图
+
+<div align = center>
+
+![boxplot](https://github.com/gotouerina/snptools/blob/main/analysis/image/distribution.png)
+
+<div align = left>
