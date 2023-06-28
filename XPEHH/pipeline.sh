@@ -15,3 +15,5 @@ for i in *.vcf ; do vcftools --vcf $i --keep cah.list   --recode --recode-INFO-a
 for i in *.vcf ; do vcftools --vcf $i --keep rus.list    --recode --recode-INFO-all --out rus/$i.rus; done 
 for i in *.vcf ; do vcftools --vcf $i --keep per.list    --recode --recode-INFO-all --out per/$i.per; done 
 ##XPEHH计算
+
+##标准化
