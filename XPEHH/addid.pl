@@ -4,7 +4,8 @@ use warnings;
 
 my $input = shift;
 my $output = shift;
-open I ," cat $input |  " or die "perl $0 $input $output";
+
+open I ," cat $input |  " or die "perl $0 $input $output"; ##如果bgzip压缩过,把cat改成 zcat
 open O , ">$output";
 
 while (<I>) 
