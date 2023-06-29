@@ -27,12 +27,13 @@ for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --xpnsl --vcf ca
 for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --xpnsl --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --vcf-ref rus/$i.input.beagle.vcf.gz.rus.recode.vcf    --map $i.vcf.map \
 --out output/cah_rus/$i.out " >> cah_rus.xpnsl.sh ; done
 
-##ihs calculate
-
-for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --map $i.vcf.map \
+##ihs calculate 不确定是不是这么用
+#for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --map $i.vcf.map \
 --out cah/$i.out " >> cah.ihs.sh ; done
-
-for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --map $i.vcf.map \
+#for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --map $i.vcf.map \
 --out kem/$i.out " >> kem.ihs.sh ; done
 
 ##标准化
+./norm --xpehh --files Chr*.out.xpehh.out --bp-win --winsize 50000
+./norm --xpnsl --files Chr*.xpnsl.out --bp-win --winsize 50000;
+#Chr*.ihs.out.norm，多了两列，其中一列就是标准化的值
