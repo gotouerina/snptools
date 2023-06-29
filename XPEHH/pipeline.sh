@@ -29,10 +29,10 @@ for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --xpnsl --vcf ca
 
 ##ihs calculate
 
-for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --vcf-ref kem/$i.input.beagle.vcf.gz.kem.recode.vcf    --map $i.vcf.map \
---out output/cah_kem/$i.out " >> cah_kem.ihs.sh ; done
+for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --map $i.vcf.map \
+--out cah/$i.out " >> cah.ihs.sh ; done
 
-for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --vcf-ref rus/$i.input.beagle.vcf.gz.rus.recode.vcf    --map $i.vcf.map \
---out output/cah_rus/$i.out " >> cah_rus.ihs.sh ; done
+for i in LG{01..19}; do echo -e "./selscan-linux-1.3.0/selscan  --ihs --vcf cah/$i.input.beagle.vcf.gz.cah.recode.vcf   --map $i.vcf.map \
+--out kem/$i.out " >> kem.ihs.sh ; done
 
 ##标准化
