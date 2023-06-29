@@ -1,6 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.28 v3.03
+Update on 2023.6.29 v3.04
 
 #   Software Install (软件安装)
 
@@ -211,6 +211,18 @@ merge by
         perl merge.pl > island.vcf
         
 To count gene island number, try bash command.
+
+#    XPEHH signal
+
+Git : https://github.com/szpiech/selscan
+
+To download ,type
+
+        wget https://github.com/szpiech/selscan/releases/download/1.2.0a/linux.tar.gz
+        tar -xf linux.tar.gz
+
+Run instruction, see pipeline.sh
+
 # Analysis Lab
 
 Some scripts might be useful for analysis.
