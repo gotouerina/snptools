@@ -15,4 +15,8 @@ freebyes推荐使用编译好的包
 
 #  建立索引
 
+ref为参考基因组
 
+    sh freebayes.step1.sh $ref
+
+#   数据过滤和比对
