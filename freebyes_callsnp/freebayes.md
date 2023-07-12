@@ -24,3 +24,8 @@ ref为参考基因组
     sh freebayes.step2.sh $fq1 $fq2 $samplename
 
 #    CALL SNP 与 过滤
+
+    #bamlist 中含有所有bam文件的路径
+    sh freebayes.step3.sh $ref
+
+    
