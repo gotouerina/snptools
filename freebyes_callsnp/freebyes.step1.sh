@@ -22,9 +22,4 @@ samtools flagstat ${samplename}.sort.bam > ${samplename}.flagstat
 samtools coverage ${samplename}.sort.bam > ${samplename}.coverage
 
 # step5 去除重复序列
-
-# step6 callsnp
-
-#  step7 提取snp
-
-#  step8 过滤
+sambamba markdup ${samplename}.sort.bam  ${samplename}.markdup.bam
