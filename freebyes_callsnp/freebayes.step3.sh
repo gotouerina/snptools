@@ -1,3 +1,4 @@
+# sh freebayes.step3.sh $ref
 ref=$1
 freebayes -f $ref -L bamlist > output.vcf
 vcffilter  -f "TYPE = snp & QUAL > 20" output.vcf > raw1.vcf
