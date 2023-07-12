@@ -1,3 +1,4 @@
+# sh freebayes.step2.sh $fq1 $fq2 $samplename
 fq1=$1
 fq2=$2
 samplename=$3
