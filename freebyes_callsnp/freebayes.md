@@ -20,3 +20,7 @@ ref为参考基因组
     sh freebayes.step1.sh $ref
 
 #   数据过滤和比对
+
+    sh freebayes.step2.sh $fq1 $fq2 $samplename
+
+#    CALL SNP 与 过滤
