@@ -201,12 +201,22 @@ Git : https://github.com/BGI-shenzhen/LDBlockShow
 
 # Pixy (分化参数计算)
 
-You can use this software calculate fst dxy pi one time !
+Warnings : PIXY denpend on python version <=3.5 but > 3
 
         conda install pixy -c conda-forge
+
+If your python version >= 3.0
+
+        conda created -n Pixy -c conda-forge pixy
+        conda activate Pixy
+
+You can use this software calculate fst dxy pi one time !
+
         pixy --stats pi fst dxy   --vcf $vcf --window_size 10000 --n_cores 8  --populations poplist
-        ##过滤大于0小于1的值
-        perl -F'\s+' -alne 'print if $F[3]>=0 && $F[3]<=1' dxy.txt  > dxy.filter.txt
+
+过滤大于0小于1的值, 注意$F[5]是第六列，根据需求更改数字
+
+        perl -F'\s+' -alne 'print if $F[5]>=0 && $F[5]<=1' dxy.txt  > dxy.filter.txt
 
 # VCFtools (分化参数计算)
       
