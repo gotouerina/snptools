@@ -1,6 +1,6 @@
 # SNPpipeline 分析流程
 
-Update on 2023.6.29 v3.04
+Update on 2023.7.18 v3.05
 
 #   Software Install (软件安装)
 
@@ -137,7 +137,21 @@ Warning : It need python2 environment.
         
         wget https://github.com/popgenmethods/smcpp/releases/download/v1.15.2/smcpp-1.15.2-Linux-x86_64.sh
         sh smcpp-1.15.2-Linux-x86_64.sh
-  
+
+Convert your VCF(s) to the SMC++ input format with vcf2smc:
+
+        smc++ vcf2smc my.data.vcf.gz out/chr1.smc.gz chr1 Pop1:S1,S2
+
+每条染色体/contig跑一次，S1 S2是POP1的个体名
+        
+        smc++ estimate -o analysis/ 1.25e-8 out/example.chr*.smc.gz
+
+1.25e-8是每代的突变率，可以用近缘物种代替. 模型以JSON格式存储在  analysis/model.final.json 中.
+
+画图
+
+        smc++ plot plot.pdf analysis/model.final.json
+
 # PSMC(群体历史)
 
 Git : https://github.com/lh3/psmc
