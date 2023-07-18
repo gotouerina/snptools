@@ -236,7 +236,7 @@ merge by
         
 To count gene island number, try bash command.
 
-#    XPEHH signal
+#    XPEHH signal （受选择信号）
 
 Git : https://github.com/szpiech/selscan
 
