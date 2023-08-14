@@ -29,8 +29,9 @@ bcftools mpileup -C50 -u -f IndexRef/$ref.fna IndexRef/$ref.sort.rmdup.bam  | bc
 $psmcPATH/utils/fq2psmcfa -q20 IndexRef/$ref.fq.gz > IndexRef/$ref.psmcfa
 $psmcPATH/utils/splitfa IndexRef/$ref.psmcfa > IndexRef/$ref.split.psmcfa
 ###使用psmc对每个个体进行1+100次bootstrap重复估算###
-$psmcPATH/psmc -N25 -t15 -r5 -p  “4+25*2+4+6” -o IndexRef/$ref.psmc IndexRef/$ref.psmcfa  # 这是1次
-seq 100 | xargs -i echo $psmcPATH/psmc -N25 -t15 -r5 -b -p “4+25*2+4+6” -o IndexRef/round-{}.$ref.psmc IndexRef/$ref.split.psmcfa | sh #这是100次
+/psmc -N25 -t15 -r5 -p  “4+25*2+4+6” -o IndexRef/$ref.psmc IndexRef/$ref.psmcfa  # 这是1次
+for i in {1..100}; do echo -e "$psmcPATH/psmc -N25 -t15 -r5 -b -p \"4+25*2+4+6\" -o IndexRef/round-${i} $ref.split.psmcfa" >> PSMC.sh ; done #这是100次
+sh PSMC.sh
 ###cat101次结果###
 cat IndexRef/$ref.psmc IndexRef/round-*.$ref.psmc > IndexRef/$ref.combined.psmc
 ###绘图###
